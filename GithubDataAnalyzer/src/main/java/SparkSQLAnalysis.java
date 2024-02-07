@@ -18,7 +18,7 @@ public class SparkSQLAnalysis {
         String databaseName = "default";
         String tableName = "github_repositories";
 
-        // Load data from the Hive table into a DataSet
+        // Load data from the Hive table into a DataFrame
         Dataset<Row> repoDF = spark.table(databaseName + "." + tableName);
 
         // Analysis 1: Count repositories per programming language
